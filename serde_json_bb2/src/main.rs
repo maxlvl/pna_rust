@@ -29,6 +29,8 @@ fn main()  -> Result<()> {
     buf_reader.read_to_string(&mut contents)?;
 
     let movement: Movement = serde_json::from_str(&contents)?;
+    println!("{:?}", a);
+    println!("{:?}", serialized);
     println!("{:?}", movement);
 
     Ok(())
